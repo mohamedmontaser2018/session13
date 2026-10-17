@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Make All Element With Animation</title>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Make All Element With Animation</h1>
+  <p>A catalog of elements, each animated with a different pure-CSS technique.</p>
+</header>
+
+<main class="grid">
+
+  <section class="demo">
+    <h2>1. Bounce</h2>
+    <div class="box bounce"></div>
+    <code>@keyframes + translateY, ease-in-out loop</code>
+  </section>
+
+  <section class="demo">
+    <h2>2. Spin</h2>
+    <div class="box spinner"><i class="fa-solid fa-gear"></i></div>
+    <code>animation: spin 2s linear infinite</code>
+  </section>
+
+  <section class="demo">
+    <h2>3. Pulse</h2>
+    <div class="box pulse"></div>
+    <code>transform: scale() + opacity keyframes</code>
+  </section>
+
+  <section class="demo">
+    <h2>4. Slide in</h2>
+    <div class="box slide"></div>
+    <code>translateX from off-screen on load</code>
+  </section>
+
+  <section class="demo">
+    <h2>5. Fade in / out</h2>
+    <div class="box fade"></div>
+    <code>opacity 0 ↔ 1, alternating</code>
+  </section>
+
+  <section class="demo">
+    <h2>6. Shake</h2>
+    <button class="box shake-trigger">Hover me</button>
+    <code>:hover triggers a shake keyframe</code>
+  </section>
+
+  <section class="demo">
+    <h2>7. Flip card</h2>
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">Front</div>
+        <div class="flip-back">Back</div>
+      </div>
+    </div>
+    <code>:hover + transform-style: preserve-3d</code>
+  </section>
+
+  <section class="demo">
+    <h2>8. Loading dots</h2>
+    <div class="dots"><span></span><span></span><span></span></div>
+    <code>animation-delay staggered per child</code>
+  </section>
+
+  <section class="demo">
+    <h2>9. Progress bar</h2>
+    <div class="progress"><div class="progress-fill"></div></div>
+    <code>width keyframe on a loop</code>
+  </section>
+
+  <section class="demo">
+    <h2>10. Heartbeat</h2>
+    <div class="box heart"><i class="fa-solid fa-heart"></i></div>
+    <code>double-pulse scale keyframe</code>
+  </section>
+
+  <section class="demo">
+    <h2>11. Typing text</h2>
+    <div class="typing" id="typingText"></div>
+    <code>JS-driven typewriter effect</code>
+  </section>
+
+  <section class="demo">
+    <h2>12. Button ripple</h2>
+    <button class="ripple-btn" id="rippleBtn">Click me</button>
+    <code>JS adds a span, CSS animates its scale/opacity</code>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
